@@ -30,7 +30,7 @@ pipeline {
             agent {
                 docker {
                     image 'cdrx/pyinstaller-linux' 
-                    args '-v /var/jenkins_home/workspace:/workspace'
+                    args '-v /root/cicd/jenkins_data/workspace:/workspace'
                 }
             }
             steps {
